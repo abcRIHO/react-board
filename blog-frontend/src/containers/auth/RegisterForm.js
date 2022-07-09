@@ -76,13 +76,13 @@ const RegisterForm = () => {
         }
     }, [auth, authError, dispatch, navigate]);
 
-    // user 값이 ㅏㄹ 설정되었느니 확인
+    // user 값이 잘 설정되었는지 확인
     useEffect(() => {
         navigate('/'); // 홈 화면으로 이동
         if (user) {
             if(user) {
                 try {
-                    localStorage.setItem('user', JSON.stringify(user));
+                    localStorage.setItem('user', JSON.stringify(user)); // 값을 문자열로 변환
                 } catch (e) {
                     console.log('localStage is not working');
                 }

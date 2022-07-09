@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderBlock = styled.div `
     position: fixed;
-    width: 100%:
+    width: 100%;
     background: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 `;
@@ -17,7 +17,7 @@ const HeaderBlock = styled.div `
 const Wrapper = styled(Responsive)`
     height: 4rem;
     display: flex;
-    aliign-items: center;
+    align-items: center;
     justify-content: space-between; /* 자식 엘리먼트 사이의 여백 최대로 설정 */
     
     .logo {
@@ -50,7 +50,7 @@ const Header = ({ user, onLogout }) => {
             <HeaderBlock>
                 <Wrapper>
                     <Link to="/" className='logo'>
-                        REACTERS
+                        MY BLOG
                     </Link>
                     {user ? (
                         <div className='right'>
